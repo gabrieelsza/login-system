@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --color-green-deep: var(--green-deep);
+  --color-green-mid: var(--green-mid);
+  --color-green-soft: var(--green-soft);
+  --color-ink: var(--ink);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --shadow-editorial: 0 24px 60px -32px oklch(0.16 0.05 155 / 0.55);
+  --shadow-soft: 0 2px 0 0 oklch(0.16 0.05 155 / 0.08);
+}
+
+:root {
+  --radius: 1rem;
+
+  --green-deep: oklch(0.28 0.062 158);
+  --green-mid: oklch(0.38 0.072 157);
+  --green-soft: oklch(0.46 0.068 156);
+  --cream: oklch(0.95 0.055 95);
+  --cream-deep: oklch(0.88 0.09 92);
+  --ink: oklch(0.22 0.05 158);
+
+  --background: var(--green-deep);
+  --foreground: var(--cream);
+  --card: oklch(0.97 0.03 95);
+  --card-foreground: var(--ink);
+  --popover: oklch(0.97 0.03 95);
+  --popover-foreground: var(--ink);
+  --primary: var(--green-deep);
+  --primary-foreground: var(--cream);
+  --secondary: oklch(0.93 0.04 95);
+  --secondary-foreground: var(--ink);
+  --muted: oklch(0.92 0.028 95);
+  --muted-foreground: oklch(0.48 0.045 158);
+  --accent: var(--cream-deep);
+  --accent-foreground: var(--ink);
+  --destructive: oklch(0.55 0.19 27);
+  --destructive-foreground: oklch(0.98 0.01 95);
+  --border: oklch(0.82 0.045 120 / 0.5);
+  --input: oklch(0.8 0.045 120 / 0.7);
+  --ring: var(--green-soft);
+}
