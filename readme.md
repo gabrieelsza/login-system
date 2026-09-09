@@ -1,4 +1,4 @@
-# Momento — Autenticação com JWT
+# Autenticação com JWT
 
 Aplicação fullstack de autenticação desenvolvida como projeto de portfólio, com foco em boas práticas de login, registro e proteção de rotas com JWT.
 
