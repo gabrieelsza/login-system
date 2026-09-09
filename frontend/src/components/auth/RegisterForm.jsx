@@ -1,15 +1,28 @@
+import { FcGoogle } from "react-icons/fc"
 import { Button } from "../ui/Button"
 import Input from "../ui/Input"
+import { FaApple } from "react-icons/fa"
 
-import { FcGoogle } from "react-icons/fc";
-import { FaApple } from "react-icons/fa";
+const RegisterForm = ({onGoToLogin}) => {
 
-export const LoginForm = ({onGoToRegister}) => {
     return (
         <div className="w-full max-w-md rounded-3xl bg-card px-7 py-9 text-card-foreground shadow-editorial sm:px-10">
             <h1 className="mt-3 font-wonk text-4xl font-black leading-none"> Bem vindo de volta! </h1>
             <p className="mt-3 text-sm text-muted-foreground"> Entre na sua conta continuar </p>
-            <form className="mt-8 space-y-5 h-auto">
+            <form className="mt-8 space-y-5">
+                <div className="space-y-2">
+                    <label
+                        htmlFor="name"
+                        className="block text-xs font-semibold uppercase tracking-[0.18em]
+                    ">
+                        Nome
+                    </label>
+                    <Input
+                        id="name"
+                        type="text"
+                        placeholder="Nome"
+                    />
+                </div>
                 <div className="space-y-2">
                     <label
                         htmlFor="email"
@@ -31,20 +44,17 @@ export const LoginForm = ({onGoToRegister}) => {
                             className="block text-xs font-semibold uppercase tracking-[0.18em]">
                             Senha
                         </label>
-                        <p className="font-wonk text-xs italic underline-offset-4 hover:text-primary">
-                            Esqueci minha senha
-                        </p>
                     </div>
                     <Input
                         id="password"
                         type="password"
-                        placeholder="Digite sua senha"
+                        placeholder="Crie sua senha"
                     />
                 </div>
 
                 <Button
                     type="button"
-                    label="Entrar"
+                    label="Cadastrar"
                     className="w-full rounded-xl bg-primary py-3.5 font-wonk text-lg font-black uppercase tracking-[0.14em] text-primary-foreground transition hover:brightness-125 focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-card outline-none"
                 />
             </form>
@@ -60,14 +70,16 @@ export const LoginForm = ({onGoToRegister}) => {
                     className="flex items-center justify-center gap-2 rounded-xl border border-input bg-secondary/40 py-3 text-sm font-medium transition hover:bg-accent/60" />
             </div>
             <p className="mt-8 text-center text-sm text-muted-foreground">
-                Ainda não tem uma conta ?
+                Já possui uma conta  ?
                 <button
-                    onClick={onGoToRegister}
+                    onClick={onGoToLogin}
                     className="font-semibold text-primary underline-offset-4 hover:underline"
                 >
-                    Criar conta
+                    Entrar
                 </button>
             </p>
         </div>
     )
 }
+
+export default RegisterForm
