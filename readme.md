@@ -6,7 +6,7 @@ Aplicação fullstack de autenticação desenvolvida como projeto de portfólio,
 
 ## Visão Geral
 
-O **Momento** é uma plataforma com tela de autenticação completa — login e registro — integrada a um backend Node.js com geração e validação de tokens JWT. O projeto foi construído para demonstrar domínio do fluxo de autenticação moderno em aplicações web.
+ Uma plataforma com tela de autenticação completa — login e registro — integrada a um backend Node.js com geração e validação de tokens JWT. O projeto foi construído para demonstrar domínio do fluxo de autenticação moderno em aplicações web.
 
 ---
 
